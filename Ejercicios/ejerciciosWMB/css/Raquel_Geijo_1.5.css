@@ -1,0 +1,13 @@
+#Mapa1 {
+	float: left;
+	width: 100%;
+	height: 48%;
+	border-style: double;
+}
+
+#Mapa2 {
+	float: right;
+	width: 100%;
+	height: 48%;
+	border-style: double;
+}

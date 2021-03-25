@@ -1,0 +1,44 @@
+#Tables {
+    float: right;
+    width: 14%;
+    height: 100%;
+    border-style: double;
+}
+
+table {
+    width: 75%;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+.celdaT1 {
+    border: 1px solid #888;
+    background-color: #3498DB;
+    color: #fff;
+    padding: 3px;
+}
+
+.celdaT1:hover {
+    background-color: #0066a2;
+}
+
+.celdaT2 {
+    border: 1px solid #ccc;
+}
+
+.olTileImage {
+    border: 1px solid #0066a2;
+}
+
+.olControlNavToolbar {
+    top: 0px;
+    left: 0px;
+    float: left;
+}
+
+.olControlNavToolbar div {
+    float: left;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Información</title>
+	<script type="text/javascript" src="ej4.js"></script>
+</head>
+
+<body>
+	<p> Introduce tu nombre </p>
+	<input id="nombre" type="text" />
+	<p> Selecciona tu género </p>
+	<input id="mujer" name="genero" type="radio" value="mujer">Mujer<br>
+	<input id="hombre" name="genero" type="radio" value="hombre">Hombre
+	<p> Selecciona tu franja de edad </p>
+	<select id="edad">
+		<option value="niñx">1-17</option>
+		<option value="joven">18-35</option>
+		<option value="adultx">36-65</option>
+		<option value="mayor">66-</option>
+	</select>
+	<input id="anadir" type="button" value="Añadir" onclick="anadirDatos()" />
+	<h1> Personas introducidas </h1>
+	<p id="datos"></p>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gestión de Controles en un Mapa</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Inluir LibreríaOpenLayers v2.11 de la web, o en local-->
+	<!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+	<!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+	<!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+	<!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+	<script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+	<!-- Inluir Código del programa -->
+	<!--<script type="text/javascript" src="./js/init_ejeB7_OL2.js"></script>-->
+	<script type="text/javascript" src="./js/Raquel_Geijo_1.3.js"></script>
+	<!-- Inluir un estilo general -->
+	<link rel="stylesheet" type="text/css" href="./css/General.css">
+	<link rel="stylesheet" type="text/css" href="./css/ol.css">
+	<!-- Inluir un estilo para elementos de esta página -->
+	<link rel="stylesheet" type="text/css" href="./css/MapaForm.css">
+</head>
+
+<body onload="init_Mapa1()">
+	<div id="Mapa1"></div>
+	<div id="Form1">
+		<!--dentro del contenedor span center se muestran las coordenadas del centro del mapa con innerHTML-->
+		<p>Centro: <span id="center"></span><br>
+			<!--dentro del contenedor zoom se muestra el nivel de zoom del mapa con innerHTML-->
+			Zoom: <span id="zoom"></span></p>
+		<p>Utiliza una de las siguientes opciones:</p>
+		<!---	Un primer subformulario que contiene dos cajas
+			de texto (numéricas) y un botón “MobyByPx” en el monitorizamos
+			el evento onclick definiendo el manejador “moveByPx()”-->
+		<form>
+			<input type="number" id="xPix1" step="1" value="0"> píxeles en X<br>
+			<input type="number" id="yPix1" step="1" value="0"> píxeles en Y<br>
+			<button name="bPan1" type="button" class="action-button animate blue" onclick="moveByPx()">MoveByPx</button><br>
+		</form><br><br>
+		<!----EJERCICIO formulario intermedio que cambia la posicion con valores de long y lat-->
+		<form>
+			<input type="number" id="lon2" step="1" value="0"> º en longitud<br>
+			<input type="number" id="lat2" step="1" value="0"> º en latitud<br>
+			<button name="bPan2" type="button" class="action-button animate blue" onclick="moveByLonLat()">MoveByLonLat</button><br>
+		</form><br><br>
+		<!----	Un segundo subformulario que contiene 3 cajas de texto (numéricas),
+			un checkbox (sin eventos asociados en el HTML) y un botón “MoveTo” con un manejador
+			del evento onclick llamado “moveTo()”-->
+		<form>
+			<input type="number" id="lon1" step="1" min="-180" max="180" value="0"> longitud<br>
+			<input type="number" id="lat1" step="1" min="-90" max="90" value="0"> latitud<br>
+			<input type="number" id="zoom1" min="0" step="1" value="2"> zoom<br>
+			<!--<input type="checkbox" id="forceZoomChange1" class="regular-checkbox" value="forceZoomChange1" onchange="forceZoomChange()">
+				<label for="forceZoomChange1"></label>Forzar Cambio de Zoom<br>-->
+			<input type="checkbox" id="dragging1" class="regular-checkbox" value="dragging1">
+			<label for="dragging1"></label>Arrastrando<br>
+			<button name="bPan2" type="button" class="action-button animate blue" onclick="moveTo()">MoveTo</button><br>
+		</form><br><br>
+	</div>
+</body>
+
+</html>

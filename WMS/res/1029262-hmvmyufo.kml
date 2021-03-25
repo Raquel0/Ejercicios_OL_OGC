@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+	<name>hmv my ufo.kmz</name>
+	<open>1</open>
+	<Style id="sh_ufo">
+		<IconStyle>
+			<Icon>
+				<href>http://www.ufomaps.com/img/ufo.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ufo">
+		<IconStyle>
+			<Icon>
+				<href>http://www.ufomaps.com/img/ufo.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00000000</color>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_ufo0">
+		<IconStyle>
+			<Icon>
+				<href>http://www.ufomaps.com/img/ufo.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ufo">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ufo0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ufo0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ufo0">
+		<IconStyle>
+			<Icon>
+				<href>http://www.ufomaps.com/img/ufo.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00000000</color>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ufo0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ufo</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ufo</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>9/13/1990 10:30:00 PM Hódmezövásárhely, Hungary</name>
+		<description><![CDATA[<strong>Reported Shape:</strong> elliptical<br/><strong>Duration:</strong> 10 SEC<br/><strong>Report:</strong> my mother, a friend of our family and i just have gone outside from the party we have been when i asked what it was. Then we just stood astonished. The object were moving to our direction from the south. It looked rather small and glowed in orange, we could not even ascertain its measure or altitude. After a while it stopped and suddenly streaked to the west. After it disappeared we heared a strange, deep roar and the dogs started to bark all over in the neighborhood.]]></description>
+		<LookAt>
+			<longitude>20.31563281214164</longitude>
+			<latitude>46.40887564857931</latitude>
+			<altitude>0</altitude>
+			<range>430.9134346912485</range>
+			<tilt>76.75800222939512</tilt>
+			<heading>166.4866892709441</heading>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<TimeStamp><when>1990-09-02</when>
+</TimeStamp>
+		<styleUrl>#msn_ufo</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>20.31522853304679,46.41098966775044,121</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

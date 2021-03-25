@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Restringir la Externsión de Mapa</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Inluir LibreríaOpenLayers v2.11 de la web, o en local-->
+	<!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+	<!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+	<!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+	<!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+	<script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+	<!-- Inluir Código del programa -->
+	<!--<script type="text/javascript" src="./js/init_ejeB8_OL3.js"></script>-->
+	<script type="text/javascript" src="./js/init_ejeB8_OL3.js"></script>
+	<!-- Inluir un estilo general -->
+	<link rel="stylesheet" type="text/css" href="./css/General.css">
+	<link rel="stylesheet" type="text/css" href="./css/ol.css">
+	<!-- Inluir un estilo para elementos de esta página -->
+	<link rel="stylesheet" type="text/css" href="./css/MapaForm.css">
+</head>
+
+<body onload="init_Mapa1()">
+	<div id="Mapa1"></div>
+	<div id="Form1">
+
+		<form>
+			Restringir área:<br>
+			<input type="number" id="izq1" step="1" min="-180" max="180"> º Izquierda<br>
+			<input type="number" id="aba1" step="1" min="-90" max="90"> º Abajo<br>
+			<input type="number" id="der1" step="1" min="-180" max="180"> º Derecha<br>
+			<input type="number" id="arr1" step="1" min="-90" max="90"> º Arriba<br>
+			<button name="bUpdate1" type="button" class="action-button animate blue" onclick="updateExtent()">Actualizar</button><br>
+		</form><br><br>
+		<!--<form>
+				Extensión restringida:<br>
+				<input type="number" id="izq2" step="10" min="-180" max="180"> º Izquierda<br>
+				<input type="number" id="aba2" step="10" min="-90" max="90"> º Abajo<br>
+				<input type="number" id="der2" step="10" min="-180" max="180"> º Derecha<br>
+				<input type="number" id="arr2" step="10" min="-90" max="90"> º Arriba<br>								
+				<button name="bUpdate2" type="button" class="action-button animate blue" onclick="updateRestrictedExtent()">Actualizar</button><br>
+            </form><br><br>-->
+	</div>
+</body>
+
+</html>

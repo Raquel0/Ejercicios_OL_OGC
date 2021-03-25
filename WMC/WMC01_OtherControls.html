@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gestión de Controles en un Mapa</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Inluir LibreríaOpenLayers v2.11 de la web, o en local-->
+	<!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+	<!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+	<!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+	<!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+	<script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+	<!-- Inluir Código del programa -->
+	<script type="text/javascript" src="./js/init_ejeC1_OL3.js"></script>
+	<!-- Inluir un estilo general -->
+	<link rel="stylesheet" type="text/css" href="./css/General.css">
+	<link rel="stylesheet" type="text/css" href="./css/ol.css">
+	<!-- Inluir un estilo para elementos de esta página -->
+	<link rel="stylesheet" type="text/css" href="./css/MapaForm.css">
+</head>
+
+<body onload="init()">
+	<div id="Mapa1"></div>
+	<div id="Form1">
+		<p>Señala los controles que quieras añadir al mapa:</p>
+		<form>
+			<input type="checkbox" id="Attribution" class="regular-checkbox" value="Attribution" onchange="updateAttribution()">
+			<label for="Attribution"></label> Attribution<br>
+			<input type="checkbox" id="FullScreen" class="regular-checkbox" value="FullScreen" onchange="updateFullScreen()">
+			<label for="FullScreen"></label> FullScreen<br>
+			<input type="checkbox" id="MousePosition" class="regular-checkbox" value="MousePosition" onchange="updateMousePosition()">
+			<label for="MousePosition"></label> MousePosition<br>
+			<input type="checkbox" id="OverviewMap" class="regular-checkbox" value="OverviewMap" onchange="updateOverviewMap()">
+			<label for="OverviewMap"></label> OverviewMap<br>
+			<input type="checkbox" id="Rotate" class="regular-checkbox" value="Rotate" onchange="updateRotate()">
+			<label for="Rotate"></label> Rotate<br>
+			<input type="checkbox" id="ScaleLine" class="regular-checkbox" value="ScaleLine" onchange="updateScaleLine()">
+			<label for="ScaleLine"></label> ScaleLine<br>
+			<input type="checkbox" id="Zoom" class="regular-checkbox" value="Zoom" onchange="updateZoom()">
+			<label for="Zoom"></label> Zoom<br>
+			<input type="checkbox" id="ZoomSlider" class="regular-checkbox" value="ZoomSlider" onchange="updateZoomSlider()">
+			<label for="ZoomSlider"></label> ZoomSlider<br>
+			<input type="checkbox" id="ZoomToExtent" class="regular-checkbox" value="ZoomToExtent" onchange="updateZoomToExtent()">
+			<label for="ZoomToExtent"></label> ZoomToExtent<br>
+		</form>
+	</div>
+</body>
+
+</html>

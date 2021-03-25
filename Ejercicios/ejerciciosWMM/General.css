@@ -1,0 +1,25 @@
+html, body {
+	width: 99%;
+	height: 99%;
+	margin: 0;
+	padding: 0;
+}
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #999;
+    opacity: 0.5;
+    filter: alpha(opacity=80);
+}
+#loading {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -28px 0 0 -25px;
+}
+

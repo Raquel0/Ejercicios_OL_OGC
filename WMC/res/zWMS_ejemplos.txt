@@ -1,0 +1,1 @@
+https://trac.osgeo.org/openlayers/wiki/AvailableWMSServices

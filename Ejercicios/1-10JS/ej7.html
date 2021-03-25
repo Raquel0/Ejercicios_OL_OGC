@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<style rel="stylesheet" type="text/css">
+		img {
+			height: 300px;
+			width: 300px;
+			border-style: solid;
+			border-color: #EEE;
+			border-width: 1px;
+
+		}
+	</style>
+	<script type="text/javascript" src="ej7.js"></script>
+
+	<title>Selección de imágenes</title>
+</head>
+
+<body>
+	<h1>Selecciona la imagen a mostrar</h1>
+	<select id="fuente" onchange="colocaImagen()">
+		<option value="astronauta.jpg">Astronauta</option>
+		<option value="click.png">Click</option>
+		<option value="dance.jpg">Dance</option>
+		<option value="mapa.jpg">Mapa</option>
+	</select><br>
+	<img id="imagen">
+</body>
+
+</html>

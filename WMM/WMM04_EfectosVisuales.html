@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gestión de Efectos Visuales en un Mapa</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Inluir LibreríaOpenLayers v2.11 de la web, o en local-->
+    <!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+    <!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+    <!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+    <!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+    <script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+    <!-- Inluir Código del programa -->
+    <!--<script type="text/javascript" src="./js/init_ejeM5_OL2.js"></script>-->
+    <script type="text/javascript" src="./js/init_ejeM4_OL3.js"></script>
+    <!-- Inluir un estilo general -->
+    <link rel="stylesheet" type="text/css" href="./css/General.css">
+    <link rel="stylesheet" type="text/css" href="./css/ol.css">
+    <!-- Inluir un estilo para elementos de esta página -->
+    <link rel="stylesheet" type="text/css" href="./css/MapaForm.css">
+</head>
+
+<body onload="init_Mapa1()">
+    <div id="Mapa1"></div>
+    <div id="Form1">
+        <p>Selecciona el tipo de animación zoom</p>
+        <form>
+            <input type="radio" name="animation" id="animacion1">easeIn<br>
+            <input type="radio" name="animation" id="animacion2">easeOut<br>
+            <input type="radio" checked="true" name="animation" id="animacion3" onchange="updateRadio1()">inAndOut<br>
+            <input type="radio" name="animation" id="animacion4" onchange="updateRadio1()">Linear<br>
+            <button name="zIn" type="button" class="action-button animate blue" onclick="zoomIn()">Zoom In</button><br>
+            <button name="zOut" type="button" class="action-button animate blue" onclick="zoomOut()">Zoom Out</button><br>
+        </form>
+        <p>Modifica la opacidad de la capa</p>
+        <input type="number" id="Opacity" step="5" min="0" max="100" value="100" oninput="updateOpacity()"> Opacidad<br>
+    </div>
+</body>
+
+</html>

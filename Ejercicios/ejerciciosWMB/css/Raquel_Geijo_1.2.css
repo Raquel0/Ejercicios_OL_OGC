@@ -1,0 +1,27 @@
+#Mapa1 {
+	float: left;
+	width: 49%;
+	height: 49%;
+	border-style: double;
+}
+
+#Mapa2 {
+	float: right;
+	width: 49%;
+	height: 49%;
+	border-style: double;
+}
+
+#Mapa3 {
+	float: left;
+	width: 49%;
+	height: 49%;
+	border-style: double;
+}
+
+#Formulario {
+	float: right;
+	width: 49%;
+	height: 49%;
+	border-style: simple;
+}

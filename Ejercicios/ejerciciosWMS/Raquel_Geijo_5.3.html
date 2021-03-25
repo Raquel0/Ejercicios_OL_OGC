@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gestión de Controles en un Mapa</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Inluir LibreríaOpenLayers v2.11 de la web, o en local-->
+    <!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+    <!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+    <!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+    <!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+    <script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+    <!-- Inluir Código del programa -->
+    <!--<script type="text/javascript" src="./js/init_ejeB7_OL2.js"></script>-->
+    <script type="text/javascript" src="./js/Raquel_Geijo_5.3.js"></script>
+    <!-- Inluir un estilo general -->
+    <link rel="stylesheet" type="text/css" href="./css/General.css">
+    <link rel="stylesheet" type="text/css" href="./css/ol.css">
+    <!-- Inluir un estilo para elementos de esta página -->
+    <link rel="stylesheet" type="text/css" href="./css/MapaForm.css">
+</head>
+
+<body onload="init()">
+    <div id="Mapa1"></div>
+    <div id="Form1">
+        <form>
+            <!-- MENU DESPLEGABLE -->
+            <select id="colorSelection" class="select">
+                <option value="0">ROJO</option>
+                <option value="1">AMARILLO</option>
+                <option value="2">VERDE</option>
+                <option value="3">AZUL</option>
+                <option value="4">MORADO</option>
+                <option value="5">ROSA</option>
+            </select><br>
+            <!-- CONTENEDOR PARA METER UN NUMERO -->
+            <input type="number" id="size" min="0" step="1" value="0"> Tamaño círculo<br>
+            <!-- BOTON PARA HACER EL CAMBIO -->
+            <button name="boton" type="button" class="action-button animate blue" onclick="changeProp()">Cambiar
+                propiedades</button><br>
+        </form><br><br>
+    </div>
+</body>
+
+</html>

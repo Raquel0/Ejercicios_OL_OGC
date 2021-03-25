@@ -1,0 +1,41 @@
+#Form1 {
+	float: left;
+	width: 49%;
+	height: 5%;
+	border-style: none;
+}
+
+#Form2 {
+	float: right;
+	width: 49%;
+	height: 5%;
+	border-style: none;
+}
+
+#Mapa1 {
+	float: left;
+	width: 49%;
+	height: 95%;
+	border-style: double;
+}
+
+#Mapa2 {
+	float: right;
+	width: 49%;
+	height: 95%;
+	border-style: double;
+}
+
+input[type='number'] {
+	width: 10%;
+	padding: 2px 3px;
+	margin: 4px 10px;
+	border: 1px solid #aaaaaa;
+	border-radius: 2px;
+	text-align: right;
+	box-sizing: border-box;
+}
+
+input[type='number']:out-of-range {
+	border-color: red;
+}

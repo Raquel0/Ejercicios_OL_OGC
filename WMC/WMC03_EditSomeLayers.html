@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edición de varias capas vectoriales</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Inluir LibreríaOpenLayers v2.11 de la web, o en local-->
+    <!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+    <!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+    <!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+    <!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+    <script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+    <!-- Inluir Código del programa -->
+    <script type="text/javascript" src="./js/init_ejeC3_OL3.js"></script>
+    <!-- Inluir un estilo general -->
+    <link rel="stylesheet" type="text/css" href="./css/General.css">
+    <link rel="stylesheet" type="text/css" href="./css/ol.css">
+    <!-- Inluir un estilo para elementos de esta página -->
+    <link rel="stylesheet" type="text/css" href="./css/MapaForm.css">
+</head>
+
+<body onload="init()">
+    <div id="Mapa1"></div>
+    <div id="Form1">
+        <p>Señala la capa sobre la que añadir características:</p>
+        <form>
+            <!-- RADIOBUTONS EN LOS QUE VOY A MARCAR EN QUE CAPA QUIERO DIBUJAR -->
+            <input id="rbA" type="radio" onchange="layerAChanged()" name="layer" value="layerA" checked />
+            <label for="layerA"></label> Capa A<br>
+            <!-- RADIOBUTONS EN LOS QUE VOY A MARCAR EN QUE CAPA QUIERO DIBUJAR -->
+            <input id="rbB" type="radio" onchange="layerBChanged()" name="layer" value="layerB" />
+            <label for="layerB"></label> Capa B<br>
+            <!-- class="regular-radio" -->
+        </form>
+    </div>
+</body>
+
+</html>

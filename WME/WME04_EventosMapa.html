@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eventos sobre el Mapa</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Inluir LibreríaOpenLayers v2.11 de la web, o en local-->
+    <!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+    <!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+    <!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+    <!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+    <script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+    <!-- Inluir Código del programa -->
+    <script type="text/javascript" src="./js/init_ejeE4_OL3.js"></script>
+    <!-- Inluir un estilo general -->
+    <link rel="stylesheet" type="text/css" href="./css/General.css">
+    <link rel="stylesheet" type="text/css" href="./css/ol.css">
+    <!-- Inluir un estilo para elementos de esta página -->
+    <link rel="stylesheet" type="text/css" href="./css/MapaForm.css">
+
+</head>
+
+<body onload="init()">
+    <div id="Mapa1"></div>
+    <div id="Tables">
+        <h2>Eventos sobre el mapa</h2>
+        <h3>Área actual del mapa:</h3>
+        <p><strong>Inf Izq: </strong><span id="infizq"></span></p>
+        <p><strong>Sup Dcha: </strong><span id="supdcha"></span></p>
+        <h3>Último click sobre el mapa:</h3>
+        <p><strong>Coordenada: </strong><span id="coord"></span></p>
+        <p><strong>Pixel: </strong><span id="pixel"></span></p>
+    </div>
+</body>
+
+</html>

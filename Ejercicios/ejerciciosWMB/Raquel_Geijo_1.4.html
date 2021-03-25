@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cambiar Pila de Capas en un Mapa</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Inluir LibreríaOpenLayers v2.11 de la web, o en local-->
+    <!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+    <!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+    <!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+    <!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+    <script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+    <!-- Inluir Código del programa -->
+    <!--<script type="text/javascript" src="./js/init_ejeB5_OL2.js"></script>-->
+    <script type="text/javascript" src="./js/Raquel_Geijo_1.4.js"></script>
+    <!-- Inluir un estilo general -->
+    <link rel="stylesheet" type="text/css" href="./css/General.css">
+    <!-- Inluir un estilo para elementos de esta página -->
+    <link rel="stylesheet" type="text/css" href="./css/Raquel_Geijo_1.4.css">
+</head>
+
+<body onload="init_Mapa1()">
+    <div id="Form1">
+        <p>Abre el control de capas y modifícalas con los botones proporcionados:</p>
+        <form>
+            <p><button name="bUp" type="button" class="action-button animate blue" onclick="raiseLayer()">Move Up</button><br>
+                <button name="bDown" type="button" class="action-button animate blue" onclick="lowerLayer()">Move Down</button><br>
+            </p>
+            <select id="sLayerSelection" class="select">
+                <option value="OpenStreetMaps">Capa OSM</option>
+                <option value="WMS">Capa WMS</option>
+                <option value="Population Density">Densidad Población</option>
+            </select><br>
+        </form>
+    </div>
+    <div id="Mapa1"></div>
+</body>
+
+</html>

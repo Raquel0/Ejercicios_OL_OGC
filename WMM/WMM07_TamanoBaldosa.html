@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Añadir imágenes de WMS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Inluir Librería OpenLayers v2.11 de la web, o en local-->
+    <!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+    <!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+    <!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+    <!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+    <script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+    <!-- Inluir Código del programa -->
+    <!--<script type="text/javascript" src="./js/init_ejeM8_OL2.js"></script>-->
+    <script type="text/javascript" src="./js/init_ejeM7_OL3.js"></script>
+    <!-- Inluir un estilo general -->
+    <link rel="stylesheet" type="text/css" href="./css/General.css">
+    <link rel="stylesheet" type="text/css" href="./css/ol.css">
+    <!-- Inluir un estilo para elementos de esta página -->
+    <link rel="stylesheet" type="text/css" href="./css/MapaForm.css">
+</head>
+
+<body onload="init()">
+    <div id="Mapa1"></div>
+    <form id="Form1">
+        <select id="listResolution" class="select">
+            <option value="512">512x512</option>
+            <option value="256">256x256</option>
+            <option value="128">128x128</option>
+            <option value="64">64x64</option>
+            <option value="32">32x32</option>
+        </select>
+        <button name="c" type="button" class="action-button animate blue" onclick="cambiarResolution()">Cambiar
+            Resolución</button><br>
+    </form>
+</body>
+
+</html>

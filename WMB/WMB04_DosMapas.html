@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Creación de Mapa sin Capas Base</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Inluir LibreríaOpenLayers v2.11 de la web, o en local-->
+	<!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+	<!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+	<!-- Inluir LibreríaOpenLayers v3.20 de la web, o en local-->
+	<!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+	<script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+	<!-- Inluir Código del programa -->
+	<!--<script type="text/javascript" src="./js/init_ejeB4_OL2.js"></script>-->
+	<script type="text/javascript" src="./js/init_ejeB4_OL3.js"></script>
+	<!-- Inluir un estilo general -->
+	<link rel="stylesheet" type="text/css" href="./css/General.css">
+	<!-- Inluir un estilo para elementos de esta página -->
+	<link rel="stylesheet" type="text/css" href="./css/DosMapasForm.css">
+</head>
+
+<body onload="init()">
+	<div id="Mapa1"></div>
+	<div id="Mapa2"></div>
+	<div id="Form1">
+		<form>
+			<input type="checkbox" id="checkcapa1" class="regular-checkbox" value="capa1" onchange="updateCheckCapa1()" checked=true>
+			<label for="checkcapa1"></label>Capa 1<br>
+			<input type="checkbox" id="checkcapa2" class="regular-checkbox" value="capa2" onchange="updateCheckCapa2()">
+			<label for="checkcapa2"></label>Capa 2<br>
+		</form>
+	</div>
+	<div id="Form2">
+		<form>
+			<input type="radio" name="capas" id="radiocapa1" class="regular-radio" value="capa1" onchange="updateRadio1()">
+			<label for="radiocapa1"></label>Capa 1<br>
+			<input type="radio" name="capas" id="radiocapa2" class="regular-radio" value="capa2" onchange="updateRadio1()">
+			<label for="radiocapa2"></label>Capa 2<br>
+		</form>
+	</div>
+</body>
+
+</html>

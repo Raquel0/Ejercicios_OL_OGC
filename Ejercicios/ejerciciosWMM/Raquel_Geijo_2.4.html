@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 2.4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Inluir Librer?penLayers v2.11 de la web, o en local-->
+    <!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+    <!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+    <!-- Inluir Librer?penLayers v3.20 de la web, o en local-->
+    <!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+    <script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+    <!-- Inluir C??o del programa -->
+    <!--<script type="text/javascript" src="./js/init_ejeB5_OL2.js"></script>-->
+    <script type="text/javascript" src="./js/Raquel_Geijo_2.4.js"></script>
+    <!-- Inluir un estilo general -->
+    <link rel="stylesheet" type="text/css" href="./css/General.css">
+    <!-- Inluir un estilo para elementos de esta p?na -->
+    <link rel="stylesheet" type="text/css" href="./css/Raquel_Geijo_2.4.css">
+</head>
+
+<body onload="init()">
+    <div id="Mapa1"></div>
+    <div id="Form1">
+        <p>Elige una capa imagen:</p>
+        <form>
+            <!-- OJO!! hacer coincidir contenido de value con title en JS para que suba la capa-->
+            <select id="imageSelection" class="select">
+                <option value="capa0">Imagen1</option>
+                <option value="capa1">Imagen2</option>
+            </select><br>
+            <button name="anadir" type="button" class="action-button animate blue" onclick="anadirImagen()">A�adir</button><br>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 2.3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Inluir Librer�aOpenLayers v2.11 de la web, o en local-->
+    <!--<script type="text/javascript" src="http://openlayers.org/api/2.13/OpenLayers.js"></script>-->
+    <!-- <script type="text/javascript" src="./jslib/ol2-master/lib/OpenLayers.js"></script>-->
+    <!-- Inluir Librer�aOpenLayers v3.20 de la web, o en local-->
+    <!--<script type="text/javascript" src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>-->
+    <script type="text/javascript" src="./jslib/ol3/ol.js"></script>
+    <!-- Inluir C�digo del programa -->
+    <!--<script type="text/javascript" src="./js/init_ejeB5_OL2.js"></script>-->
+    <script type="text/javascript" src="./js/Raquel_Geijo_2.3.js"></script>
+    <!-- Inluir un estilo general -->
+    <link rel="stylesheet" type="text/css" href="./css/General.css">
+    <!-- Inluir un estilo para elementos de esta p�gina -->
+    <link rel="stylesheet" type="text/css" href="./css/Raquel_Geijo_2.3.css">
+</head>
+
+<body onload="init()">
+    <div id="Mapa1"></div>
+    <div id="Form1">
+        <p>Elige una capa para moverla a arriba:</p>
+        <form>
+            <!-- OJO!! hacer coincidir contenido de value con title para que suba la capa-->
+            <select id="sLayerSelection" class="select">
+                <option value="capa0">AgroAl</option>
+                <option value="capa1">Municipios</option>
+                <option value="capa2">Navarra</option>
+                <option value="capa3">MDT Color</option>
+                <option value="capa4">Orto</option>
+            </select><br>
+            <button name="bTop" type="button" class="action-button animate blue" onclick="topLayer()">Move to Top</button><br>
+        </form>
+        <p>Modifica la opacidad de la capa</p>
+        <input type="number" id="Opacity" step="5" min="0" max="100" value="100" oninput="updateOpacity()">Opacidad<br>
+    </div>
+</body>
+
+</html>
